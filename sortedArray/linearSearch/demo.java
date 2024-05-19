@@ -1,7 +1,7 @@
 class demo {
     public static void main(String[] args) {
         int num[] = { 2, 3, 4, 6, 11 };
-        int Target = 6;
+        int Target = 3;
         int result = linearSearch(num, Target);
         if (result != -1)
             System.out.println("your element is at index of :" + result);
