@@ -1,4 +1,4 @@
-package sortArray.selectionSort;
+
 public class SelectSortArray {
     public static void main(String[] args) {
         int nums[] = { 7, 4, 3, 6, 2, 5 };
