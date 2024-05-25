@@ -34,8 +34,8 @@ class SingleDimensionArray {
             }
         } else {
             System.out.println(
-                    "Invalid index value Entered. [\" + arr.length + \"] is "+
-                    "the highest you can enter.\");\r\n");
+                    "Invalid index value Entered. [\" + arr.length + \"] is " +
+                            "the highest you can enter.\");\r\n");
         }
     }
 
@@ -44,6 +44,16 @@ class SingleDimensionArray {
             System.out.print(n + " ");
         }
         System.out.println();
+    }
+
+    public void DeleteItemArray(int IndexWantToEmpty) {
+        try {
+            arr[IndexWantToEmpty] = Integer.MIN_VALUE;
+            isSet[IndexWantToEmpty] = false;
+            System.out.println("Your value is empty at index of :" + IndexWantToEmpty);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("your index value doesnot exist");
+        }
     }
 
 }
