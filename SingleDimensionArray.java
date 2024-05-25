@@ -34,7 +34,8 @@ class SingleDimensionArray {
             }
         } else {
             System.out.println(
-                    "Invalid index value Entered. [\" + arr.length + \"] is the highest you can enter.\");\r\n");
+                    "Invalid index value Entered. [\" + arr.length + \"] is "+
+                    "the highest you can enter.\");\r\n");
         }
     }
 
