@@ -1,4 +1,4 @@
-
+Middle function
 public class Exercise {
     public static int[] middle(int[] array) {
         // TODO
