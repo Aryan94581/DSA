@@ -24,3 +24,20 @@ public class Exercise {
         return total;
     }
 }
+best score array
+
+public class Exercise {
+    public static int[] findTopTwoScores(int[] array){
+        // TODO
+        int[] topTwoScorror = new int[2];
+        topTwoScorror[0] = 0;
+        topTwoScorror[1] = 0;
+        for(int value : array){
+            if(value > topTwoScorror[0]){
+                topTwoScorror[1]=topTwoScorror[0];
+                topTwoScorror[0]=value;
+            }
+        }
+        return topTwoScorror;
+    }
+}
