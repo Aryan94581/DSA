@@ -41,3 +41,29 @@ public class Exercise {
         return topTwoScorror;
     }
 }
+
+best time to buy leetcode 121
+public class Exercise {
+    public int maxProfit(int[] prices) {
+        // TODO
+        if(prices.length ==0){
+            return 0;
+        }
+        int dayofbuy=0;
+        int dayofsell=0;
+        int i;
+        int j;
+        int length = prices.length;
+        for (i =length-2; i>0; i-- )
+        if(prices[i] < prices[i+1]){
+            dayofbuy= prices[i];
+        }
+        for(j=i+1;j<length;j++)
+        if(prices[j] > prices[j-1]){
+            dayofsell = prices[j];
+        }
+        int maxProfit = dayofsell-dayofbuy; 
+        return maxProfit;
+    }
+}
+
