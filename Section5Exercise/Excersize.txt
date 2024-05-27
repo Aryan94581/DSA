@@ -86,3 +86,18 @@ public class Exercise {
     }
 
 }
+isunique/contain dublicate
+public class Exercise {
+    public boolean isUnique(int[] intArray) {
+        // TODO
+    boolean uniqueOrNot = false;
+    for(int i=1;i<intArray.length;i++){
+        if(intArray[i] != intArray[i-1]){
+            uniqueOrNot = true;
+        }else{
+            uniqueOrNot = false;
+        }
+    }
+    return uniqueOrNot;
+    }
+}
