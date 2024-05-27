@@ -101,3 +101,33 @@ public class Exercise {
     return uniqueOrNot;
     }
 }
+permutation
+public class Exercise {
+    public boolean permutation(int[] array1, int[] array2){
+        // TODO
+        if(array1.length != array2.length){
+            return false;
+        }
+        int length = array1.length;
+        boolean check = true;
+        int Array1Add =0;
+        int Array2Add =0;
+        int Array1Mull =0;
+        int Array2Mull =0;
+        if(array1.length != array2.length){
+            check = false;
+        }
+        for(int i=0;i<length;i++){
+            Array1Add += array1[i];
+            Array1Mull= Array1Mull * array1[i];
+            Array2Add += array2[i];   
+            Array2Mull= Array2Mull * array2[i];
+            
+        }
+        if(Array1Add == Array2Add && Array1Mull == Array2Mull ){
+            check = true;
+        }
+        return check;
+    }
+
+}
