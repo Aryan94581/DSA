@@ -1,25 +1,7 @@
-public void printMatrix(int[][] matrix) {
-    for (int[] row : matrix) {
-        for (int elem : row) {
-            System.out.print(elem + " ");
-        }
-        System.out.println();
-    }
-}   
-
-    public void printMatrix(int[][] matrix) {
-        for (int[] row : matrix) {
-            for (int elem : row) {
-                System.out.print(elem + " ");
-            }
-            System.out.println();
-        }
-    }
-}
 
 public class Rotate2DArray {
     public static void main(String[] args) {
-        Exercise Ex = new Exercise();
+
         int Arrar[][] = new int[3][3];
         Arrar[0][0] = 1;
         Arrar[0][1] = 2;
@@ -37,8 +19,6 @@ public class Rotate2DArray {
             System.out.println();
         }
         System.out.println();
-        Ex.rotateMatrix(Arrar);
-        Ex.printMatrix(Arrar);
 
     }
 }
