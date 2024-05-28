@@ -5,7 +5,7 @@ public class ArrarListClass {
         ArrayList<Integer> number = new ArrayList<Integer>();
         number.add(1);
         number.add(2);
-        System.out.println(number);
+        
     }
 
 }
