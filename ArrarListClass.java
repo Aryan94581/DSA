@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrarListClass {
     public static void main(String[] args) {
@@ -17,6 +18,13 @@ public class ArrarListClass {
         // Second way
         for (String Value : StringList) {
             System.out.println(Value);
+        }
+        System.out.println();
+        // Third way
+        Iterator<String> iterator = StringList.iterator();
+        while (iterator.hasNext()) {
+            String Latter = iterator.next();
+            System.out.println(Latter);
         }
     }
 
