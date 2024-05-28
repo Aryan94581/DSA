@@ -13,8 +13,11 @@ public class ArrarListClass {
             String Value = StringList.get(i);
             System.out.println(Value);
         }
+        System.out.println();
         // Second way
-        
+        for (String Value : StringList) {
+            System.out.println(Value);
+        }
     }
 
 }
