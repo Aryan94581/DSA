@@ -27,5 +27,5 @@ public class ArrarListClass {
             System.out.println(Latter);
         }
     }
-
+    
 }
