@@ -21,8 +21,10 @@ class A {
 
     public void revurseArray(int Array[]) {
         int index = Array.length - 1;
-        for (int i = 0; i < Array.length; i++) {
+        for (int i = 0; i < Array.length / 2; i++) {
+            int temp = Array[index];
             Array[index] = Array[i];
+            Array[i] = temp;
             index--;
 
         }
