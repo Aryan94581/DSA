@@ -65,7 +65,8 @@ public class LL {
         }
         Node secondLast = get(size-2);
         int val = tail.value;
-
+        tail = secondLast;
+        tail.next = null;
         return val;
     }
     public Node get(int index){
@@ -75,7 +76,20 @@ public class LL {
         }
         return node;
     }
+    public int delete(int index){
+        if (index == 0){
+            return deleteFirst();
+        }
+        if(index == size-1){
+            return deleteLast();
+        }
+        Node prev = get(index - 1);
+        int val = prev.next.value;
 
+        prev.next = prev.next.next;
+
+        return val;
+    }
 
     public void display(){
         Node temp = head;
