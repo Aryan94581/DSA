@@ -1,12 +1,13 @@
 package linkedList;
 
-public class SingleLinkedList{
+public class SingleLinkedList {
     public Node head;
     public Node tail;
     public int size;
-    public Node createSingleLinkedList(Node nodeValue){
-        head= new Node();
-        Node node = new  Node();
+
+    public Node createSingleLinkedList(Node nodeValue) {
+        head = new Node();
+        Node node = new Node();
         node.next = null;
         node.value = nodeValue;
         head = node;
@@ -15,3 +16,4 @@ public class SingleLinkedList{
         return head;
     }
 }
+// hello
