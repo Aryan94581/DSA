@@ -7,6 +7,7 @@ public class Main {
         list.insertFirst(19);
         list.insertLast(16);
         list.insert(77, 3);
+        // list.insert(66, 100); give exception 
         list.display();
     }
 }
