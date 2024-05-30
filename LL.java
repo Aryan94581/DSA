@@ -3,7 +3,7 @@ public class LL {
     private Node tail;
     private int size;
     
-    public LL(int size) {
+    public LL() {
         this.size = 0;
     }
 
