@@ -7,7 +7,15 @@ public class LL {
         this.size = 0;
     }
 
-
+    public void indertFirst(int val){
+        Node node = new Node(val);
+        node.next = head;
+        head = node;
+        if(tail == null){
+            tail = head;
+        }
+        size += 1;
+    }
 
     private class Node{
         private int value;
