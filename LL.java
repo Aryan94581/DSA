@@ -6,7 +6,7 @@ public class LL {
     public LL() {
         this.size = 0;
     }
-
+    // insertion of element
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;
@@ -47,6 +47,35 @@ public class LL {
         size++;
 
     }
+    // insertion finished
+    // deletion
+    public int deleteFirst(){
+        int val =head.value;
+        head = head.next;
+        if(head == null){
+             tail = null;
+        }
+        size --;
+        return  val;
+    }
+
+    public int deleteLast(){
+        if(size <=1){
+            return deleteFirst();
+        }
+        Node secondLast = get(size-2);
+        int val = tail.value;
+
+        return val;
+    }
+    public Node get(int index){
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+        node = node.next;            
+        }
+        return node;
+    }
+
 
     public void display(){
         Node temp = head;

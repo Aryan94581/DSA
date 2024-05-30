@@ -9,5 +9,9 @@ public class Main {
         list.insert(77, 3);
         // list.insert(66, 100); give exception 
         list.display();
+        System.out.println(list.deleteFirst());
+        list.display();
+        System.out.println(list.deleteLast());
+        list.display();
     }
 }
