@@ -8,12 +8,9 @@ public class Main {
         list.insertLast(16);
         list.insert(77, 3);
         // list.insert(66, 100); give exception 
+       
         list.display();
-        System.out.println(list.deleteFirst());
-        list.display();
-        System.out.println(list.deleteLast());
-        list.display();
-        System.err.println(list.delete(2));
-        list.display();
+        System.err.println(list.find(13));
+        System.err.println(list.find(77));
     }
 }

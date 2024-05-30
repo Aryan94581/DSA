@@ -69,13 +69,7 @@ public class LL {
         tail.next = null;
         return val;
     }
-    public Node get(int index){
-        Node node = head;
-        for (int i = 0; i < index; i++) {
-        node = node.next;            
-        }
-        return node;
-    }
+    
     public int delete(int index){
         if (index == 0){
             return deleteFirst();
@@ -89,6 +83,25 @@ public class LL {
         prev.next = prev.next.next;
 
         return val;
+    }
+    // find the node with value
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+             if(node.value == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return node;
+    }
+    // get the index 
+    public Node get(int index){
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+        node = node.next;            
+        }
+        return null;
     }
 
     public void display(){
