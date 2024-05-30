@@ -1,6 +1,6 @@
 package linkedList;
 
 public class Node {
-    public int values;
+    public Node value;
     public Node next;
 }
