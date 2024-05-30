@@ -1,3 +1,4 @@
+package Array;
 public class noDublicateSortedArray {
     public int removeDuplicates(int[] nums) {
         // TODO

@@ -1,3 +1,4 @@
+package Array;
 class SingleDimensionArray {
     int arr[];
     boolean isSet[];

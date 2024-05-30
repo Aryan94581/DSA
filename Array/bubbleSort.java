@@ -1,26 +1,25 @@
-
-public class SelectSortArray {
+package Array;
+public class bubbleSort {
     public static void main(String[] args) {
+
         int nums[] = { 7, 4, 3, 6, 2, 5 };
         int size = nums.length;
         int temp;
-        int minIndex;
 
         System.err.println("before sorting ");
         for (int num : nums) {
             System.out.print(num + " ");
         }
 
-        for (int i = 0; i < size - 1; i++) {
-            minIndex = i;
-            for (int j = i + 1; j < size; j++) {
-                if (nums[minIndex] > nums[j]) {
-                    minIndex = j;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size - i - 1; j++) {
+                if (nums[j] > nums[j + 1]) {
+                    temp = nums[j];
+                    nums[j] = nums[j + 1];
+                    nums[j + 1] = temp;
                 }
+
             }
-            temp = nums[minIndex];
-            nums[minIndex] = nums[i];
-            nums[i] = temp;
         }
 
         System.out.println();
@@ -29,4 +28,5 @@ public class SelectSortArray {
             System.out.print(num + " ");
         }
     }
+
 }

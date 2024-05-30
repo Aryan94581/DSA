@@ -1,3 +1,4 @@
+package Array;
 class Operation {
     public int sum(int[] Array, int elementNo) {
         if (elementNo == 1) {
