@@ -1,6 +1,5 @@
-package linkedList;
 
 public class Node {
-    public Node value;
+    public int value;
     public Node next;
 }
