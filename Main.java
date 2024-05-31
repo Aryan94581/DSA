@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        // doubble linkedlist
         DLL list = new DLL();
         list. insertFirst(13);
         list. insertFirst(12);
@@ -10,14 +11,6 @@ public class Main {
         System.out.println();
         list.insert(12, 88);
         list.display();
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         // for single linkedList 
