@@ -13,16 +13,7 @@ public class DLL {
     }
     public void display(){
         Node node = head;
-        while(node != null){
-            System.out.print(node.val + " -> ");
-            node = node.next;
-        }
-    System.out.println("END");
-    }
-
-    public void displayRev(){
-        Node node = head;
-        Node last= null;
+        Node last = null;
         System.out.println("printing strate");
         while(node != null){
             System.out.print(node.val + " -> ");
@@ -36,13 +27,8 @@ public class DLL {
             System.out.print(last.val +" -> ");
             last = last.prev;
         }
-    
+        System.out.println("STSRT");
     }
-
-
-
-
-
     private class Node{
         int val;
         Node next;
