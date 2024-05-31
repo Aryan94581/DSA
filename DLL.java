@@ -27,7 +27,7 @@ public class DLL {
             System.out.print(last.val +" -> ");
             last = last.prev;
         }
-        System.out.println("STSRT");
+        System.out.println("START");
     }
     private class Node{
         int val;
