@@ -17,7 +17,7 @@ public class DLL {
             System.out.println(node.val + " -> ");
             node = node.next;
         }
-    
+    System.out.println();
     }
 
 
