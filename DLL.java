@@ -11,6 +11,20 @@ public class DLL {
         }
         head = node;
     }
+    public void insertLast(int val){
+        Node node = new Node(val);
+        if (head == null) {
+            head = node;
+        }else{
+        Node temp = head;
+        while(temp != null){
+            temp = temp.next;
+        }
+        temp.next = node;
+        node.prev = temp;
+    }
+}
+
     public void display(){
         Node node = head;
         Node last = null;

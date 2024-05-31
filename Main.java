@@ -5,6 +5,7 @@ public class Main {
         list. insertFirst(12);
         list. insertFirst(18);
         list. insertFirst(16);
+        list.insertLast(99);
         list.display();
         
         
