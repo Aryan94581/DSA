@@ -1,5 +1,5 @@
 public class DLL {
-    Node head;
+    private Node head;
 
 
     public void insertFirst(int val){
@@ -14,10 +14,29 @@ public class DLL {
     public void display(){
         Node node = head;
         while(node != null){
-            System.out.println(node.val + " -> ");
+            System.out.print(node.val + " -> ");
             node = node.next;
         }
-    System.out.println();
+    System.out.println("END");
+    }
+
+    public void displayRev(){
+        Node node = head;
+        Node last= null;
+        System.out.println("printing strate");
+        while(node != null){
+            System.out.print(node.val + " -> ");
+            last = node;
+            node = node.next;
+            
+        }
+        System.out.println("END");
+        System.out.println("printing reverse");
+        while(last != null){
+            System.out.print(last.val +" -> ");
+            last = last.prev;
+        }
+    
     }
 
 
