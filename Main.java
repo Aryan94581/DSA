@@ -7,6 +7,9 @@ public class Main {
         list. insertFirst(16);
         list.insertLast(99);
         list.display();
+        System.out.println();
+        list.insert(12, 88);
+        list.display();
         
         
         

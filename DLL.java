@@ -1,3 +1,6 @@
+
+
+
 public class DLL {
     private Node head;
 
@@ -22,9 +25,34 @@ public class DLL {
         }
         temp.next = node;
         node.prev = temp;
+        }
     }
-}
+    public void insert(int after, int val){
+        Node p = find(after);
+        if(p == null){
+            System.out.println("does not exist");
+            return;
+        }
+        Node node = new Node(val);
+        node.next = p.next;
+        p.next = node;
+        node.prev = p;
+        if(node.next!=null){
+            node.next.prev = node;
+        }
 
+    }
+
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+             if(node.val == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return node;
+    }
     public void display(){
         Node node = head;
         Node last = null;
