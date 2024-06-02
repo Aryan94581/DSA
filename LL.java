@@ -49,7 +49,7 @@ public class LL {
 
     }
     // insertion finished
-    // deletion
+    // deletion 
     public int deleteFirst(){
         int val =head.value;
         head = head.next;
