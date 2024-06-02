@@ -59,6 +59,7 @@ public class LL {
         size --;
         return  val;
     }
+    // delete last
 
     public int deleteLast(){
         if(size <=1){
